@@ -1,12 +1,17 @@
 const express = require("express");
 const app = express();
+const axios = require("axios").default;
+
+const API_URL = "http://localhost:5000";
 
 function doctoServer(port) {
     app.use(express.json());
 
     app.get("/", async (req, res) => {
-        try {
-            console.log("Hello world!")
+        try {           
+            let { data } = await axios.get(`${API_URL}/jspquoi`);
+            // treatment
+            res.json(data);
         }
         catch (error) {
             res.status(error.response.status).send(error.response.data);
