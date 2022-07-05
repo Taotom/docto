@@ -1,1 +1,1 @@
-export { default as Language } from './language/Language';
+export { default as Results } from './results/Results';
