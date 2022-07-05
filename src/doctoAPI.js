@@ -28,22 +28,24 @@ function doctoServer(port) {
 
     // URL/drugs?name=
     app.get("/drugs", async (req, res) => {
+        let entry;
         try {
-            console.log(req.query.name);
-            //res.json(req.query.name);
+            //console.log(req.query.name);
+            //list.json(req.query.name);
 
             const fs = require('fs');
 
             const jsonString = fs.readFileSync("src/medicaments.json");
-            const obj= JSON.parse(jsonString);
+            const obj = JSON.parse(jsonString);
+
 
             //console.log(JSON.stringify(obj, null, 4));
 
             for (index = 0; index < obj.length; ++index) {
                 entry = obj[index];
-                if (req.query.name == (obj[index].name))
-                {
-
+                if (req.query.name == obj[index].name) {
+                    component = obj[index].composants[0];
+                    country = obj[index].country;
                 }
             }
 
@@ -66,8 +68,7 @@ function doctoServer(port) {
                 res.json("no result");
             //console.log(arr[0]);
             //console.log(data);*/
-        }
-        catch (error) {
+        } catch (error) {
             console.log(error)
             res.status(404).send("Not found");
         }
