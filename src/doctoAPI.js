@@ -33,7 +33,7 @@ function doctoServer(port) {
 
             const fs = require('fs');
 
-            const jsonString = fs.readFileSync("./medicaments.json");
+            const jsonString = fs.readFileSync("src/medicaments.json");
             const obj= JSON.parse(jsonString);
 
             console.log(JSON.stringify(obj, null, 4));
@@ -67,6 +67,7 @@ function doctoServer(port) {
 
     return app.listen(port, () => {
         console.log(`Docto API listening at http://localhost:${port}`);
+        console.log()
     });
 
 }
