@@ -8,6 +8,7 @@ const country = "Angleterre"
 const country_id = 1
 
 
+
 function loadJSON(callback) {
     var xobj = new XMLHttpRequest();
     xobj.overrideMimeType("./medicaments.json");
@@ -30,16 +31,12 @@ function doctoServer(port) {
             console.log(req.query.name);
             //res.json(req.query.name);
 
-            //const fs = require('fs');
-            const data = require("./medicaments.json");
-            console.log(data);
+            const fs = require('fs');
 
-            console.log("tes");
-            //const data = fs.readFileSync('./medicaments.json',
-                //{encoding:'utf8', flag:'r'});
+            const jsonString = fs.readFileSync("./medicaments.json");
+            const obj= JSON.parse(jsonString);
 
-            openJSONas
-
+            console.log(JSON.stringify(obj, null, 4));
 
 
 
@@ -63,6 +60,7 @@ function doctoServer(port) {
             //console.log(data);*/
         }
         catch (error) {
+            console.log(error)
             res.status(404).send("Not found");
         }
     })
