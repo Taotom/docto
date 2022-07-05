@@ -1,0 +1,79 @@
+[
+  {
+    name: "Doliprane",
+    description: "Antidouleurs",
+    composants: [
+      "paracétamol",
+      "diacideduréméthyle"
+    ],
+    img: "https://cdn.pharmaciedesdrakkars.com/media/images/products/3400932320189-ld-0023-front-609a8f23a6deb.jpg",
+    country: "FR"
+  },
+
+  {
+    name: "Spasfon",
+    description: "Système digestif, Vessie, Utérus",
+    composants: [
+      "phloroglucinol",
+      "diaméthyle",
+      "triméthylphloroglucinol"
+    ],
+    img: "https://www.pharmashopi.com/images/Image/spasfon-lyoc-80mg-1372664370-1.jpg",
+    country: "FR"
+  },
+
+  {
+    name: "Panadol",
+    description: "Painkiller",
+    composants: [
+      "paracétamol",
+      "diacideduréméthyle"
+    ],
+    img: "https://boots.scene7.com/is/image/Boots/10028415?id=-Klmv1&fmt=jpg&fit=constrain,1&wid=504&hei=548",
+    country: "EN"
+  },
+
+  {
+    name: "Colofac",
+    description: "Système digestif, Vessie, Utérus",
+    composants: [
+      "phloroglucinol",
+      "diaméthyle",
+      "triméthylphloroglucinol"
+    ],
+    img: "https://www.emeds.pk//upload/pro-imges/image-7/colofac.jpg",
+    country: "EN"
+  },
+
+  {
+    name: "Buscopan",
+    description: " Abdominal discomfort, bladder, Uterus",
+    composants: [
+      "phloroglucinol",
+      "diaméthyle",
+      "triméthylphloroglucinol"
+    ],
+    img: "https://www.buscopan.com/dam/jcr:4419aa37-2ba1-4f85-81b8-6c1a93eb39c4/BuscopanIbsRelief40_1_desktop-removebg-preview.png",
+    country: "EN"
+  },
+
+  {
+    name: "Smecta",
+    description: "Pansement digestif, diarrhées",
+    composants: [
+      "Diosmectite"
+    ],
+    img: "https://cdn.shop-pharmacie.fr/images/smecta-3-g-orange-vanille-sachet-s-F10000486-p12.jpg",
+    country: "FR"
+  },
+
+  {
+    name: "Dioclear",
+    description: "gastrointestinal disorders, diarrhea",
+    composants: [
+      "Diosmectite"
+    ],
+    img: "https://www.rockethealth.shop/wp-content/uploads/2020/12/Dioclear.jpg",
+    country: "EN"
+  }
+]
