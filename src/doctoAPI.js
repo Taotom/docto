@@ -1,3 +1,4 @@
+
 const express = require("express");
 const app = express();
 const axios = require("axios").default;
@@ -36,8 +37,15 @@ function doctoServer(port) {
             const jsonString = fs.readFileSync("src/medicaments.json");
             const obj= JSON.parse(jsonString);
 
-            console.log(JSON.stringify(obj, null, 4));
+            //console.log(JSON.stringify(obj, null, 4));
 
+            for (index = 0; index < obj.length; ++index) {
+                entry = obj[index];
+                if (req.query.name == (obj[index].name))
+                {
+
+                }
+            }
 
 
             /*const arr = data.split(/\r?\n/);
