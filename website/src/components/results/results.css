@@ -33,7 +33,7 @@
 
     padding: 0 10rem;
 
-    max-height: 800px;
+    max-height: 600px;
     overflow-y: auto;
     overflow-x: hidden;
     scroll-behavior: smooth;
